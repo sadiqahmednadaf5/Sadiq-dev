@@ -1,0 +1,256 @@
+:root {
+  --background-color: #fff;
+  --btn-color: #0987f2;
+  --btn-text-color: #fff;
+  --project-card-bg: #ffffff00;
+  --text-color: #222;
+  --form-text-color: #555;
+  --footer-text-color: #888;
+}
+
+[data-theme='dark'] {
+  --background-color: #222;
+  --btn-color: #fff;
+  --btn-text-color: #222;
+  --project-card-bg: #fff;
+  --text-color: #fff;
+  --form-text-color: #fff;
+  --footer-text-color: #bbb;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 60px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3,
+p {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+h2,
+h3 {
+  font-size: 20px;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 32px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.sectionTitle {
+  margin-bottom: 30px;
+}
+
+.hover {
+  cursor: pointer;
+}
+
+@media (width >= 800px) {
+  #root {
+    gap: 100px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2,
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+
+  .sectionTitle {
+    margin-bottom: 60px;
+  }
+
+  @media (width >= 1400px) {
+    #root {
+      gap: 200px;
+    }
+    h1 {
+      font-size: 48px;
+    }
+
+    .sectionTitle {
+      margin-bottom: 75px;
+    }
+  }
+}
+
+
+
+/* projectitle */
+.projecttitle{
+  font-family: system-ui;
+  font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 20px;
+} 
+
+/* 
+ProjectTech stack */
+
+.techStack{
+  font-family:cursive;
+  border: 1px solid #9c27b0;
+  border-radius: 5px;
+  display: inline-flex;
+  margin: 3px 5px 3px -1px;
+  font-size: 14 px;
+  padding: 4px;
+  color: #9c27b0;
+  font-weight: 600;
+}
+
+/* project description  */
+.descriptionText{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 15px;
+  font-size: 17px;
+
+}
+
+
+/* image icon dev */
+
+.projectSourceIcons{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 20px;
+   
+}
+/* image icon github web symbol */
+.imageIcons{
+  width: 35px;
+height: 35px;
+object-fit: contain;
+border: 1px solid #6b7688;
+border-radius: 50%;
+cursor: pointer;
+transition: all .5s;
+}
+
+
+/* skillList section */
+.skillListdark{
+  display: flex;
+    flex-direction: column !important;
+    justify-content: center !important; 
+    align-items: center !important;
+    border: 1px solid var(--skills-card-border) !important;
+    border-radius: 10px;
+    width: 95px !important;
+    height: 115px !important;
+    text-align: center !important;   
+    margin: 10px!important;
+    background-color: #fff !important;
+    cursor: pointer !important;
+    transition: all .3s !important;
+}
+.skillListlight{
+  display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center;
+    border: 1px solid var(--skills-card-border) !important ;
+    border-radius: 10px !important;
+    width: 95px !important;
+    height: 115px !important;
+    text-align: center !important;
+    margin: 10px !important;
+    background-color: whitesmoke !important;
+    cursor: pointer !important;
+    transition: all .3s !important;
+}
+.techImagedark{
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: contain !important;
+  margin-bottom: 10px !important;
+  mix-blend-mode: multiply !important;
+
+}
+.techImagelight{
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: contain !important;
+  margin-bottom: 10px !important;
+  mix-blend-mode: multiply !important;
+
+
+}
+.skillName{
+  font-size: 14px !important; 
+    width: 100% !important;
+    color: black !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .skillListdark,
+  .skillListlight {
+    width: 80px;
+    height: 100px;
+  }
+
+  .techImagedark,
+  .techImagelight {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skillName {
+    font-size: 12px;  
+        margin-top: -8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillListdark,
+  .skillListlight {
+    width: 60px !important;
+    height: 80px !important;
+  }
+
+  .techImagedark,
+  .techImagelight {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .skillName {
+    font-size: 10px !important;
+    margin-top: -8px !important;
+  }
+}

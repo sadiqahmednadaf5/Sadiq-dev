@@ -1,0 +1,136 @@
+
+
+  .container {
+    width: 85%;
+    padding: 35px 10%;
+  }
+  
+  .container {
+    padding-right: calc(10% - 30px);
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+  
+  .col header.title {
+    font-family: helvetica;
+    color: #11a372;
+    padding: 0px 0px 20px 30px;
+  }
+  
+.contents {
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+    
+  }
+  
+   .boxdark {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    background-color: #191919;
+  }
+
+
+  
+  .boxdark:hover {
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+  }
+  
+ .boxdark::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #11a372;
+    border: 2px solid white;
+  }
+  
+  .boxdark h4 {
+    position: relative;
+    color: white;
+  }
+  
+  .boxdark h3 {
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    font-family: helvetica;
+    color: wheat;
+  }
+  
+  .boxdark p {
+    line-height: 1.2;
+    color: white;
+    font-size: 17px;
+  }
+  
+  @media(max-width: 768px) {
+    .row {
+      grid-template-columns: 1fr;
+    }
+    .row .col:nth-child(2) {
+      margin-top: 30px;
+    }
+  }
+  
+
+  /* for lightTheam */
+
+   .boxlight {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+    border-radius: 30px;
+   
+  }
+
+
+  
+  .boxlight:hover {
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+  }
+  
+ .boxlight::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #11a372;
+    border: 2px solid white;
+  }
+  
+  .boxlight h4 {
+    position: relative;
+    color: black;
+  }
+  
+  .boxlight h3 {
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    font-family: helvetica;
+    color: sienna;
+  }
+  
+  .boxlight p {
+    line-height: 1.2;
+    color: black;
+    font-size: 17px;
+  }
