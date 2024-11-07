@@ -4,7 +4,8 @@ import { useState } from 'react';
 import ProjectCard from '../../common/ProjectCard';
 import ProjectImgDemo from '../../assets/image.png';
 import HouseImage from '../../images/House-renting-project-image.png';
-import EcommerFront from '../../images/E-commerce-Frontend.png'
+import EcommerFront from '../../images/E-commerce-Frontend.png';
+import StockTrading from '../../images/StockTrading.png'
 import { useTheme } from '../../common/ThemeContext';
 
 
@@ -13,7 +14,9 @@ function Projects() {
 
   const [data, setData] = useState({HouseProject:["Nodejs", "MongoDB", "Bootstrap", "Expressjs","EJS"],
     EcommerceFront:["Reactjs", "React-Router", "css", "Vite"],
-    AIImage:["OpenAI API","Nodejs", "Expressjs", "css","JavaScript"]
+    AIImage:["OpenAI API","Nodejs", "Expressjs", "css","JavaScript"],
+    StockTrading:["MongoDB","Express.js","React.js","Node.js"]
+
   });
  
 
@@ -43,6 +46,17 @@ function Projects() {
             description="Ecommerce built with Reactjs, React Router Dom, and added Front-end Functionality."
             gitrepoUrl="https://github.com/sadiqahmednadaf5/Ecommerce-App"
             liveUrl="https://ecommerce-app-mu-taupe.vercel.app/"
+
+          />
+        </div>
+        <div className={projectCardTheamChange}>
+          <ProjectCard
+            src={StockTrading}
+            p="Stock-Trading Marketplace"
+            arrayList={data.StockTrading}
+            description="Stock-Trading Marketplace built with MERN stack (MongoDB, Express.js, React.js, Node.js)"
+            gitrepoUrl="https://github.com/sadiqahmednadaf5/The-Stock-Trading-Marketplace"
+            liveUrl="https://github.com/sadiqahmednadaf5/The-Stock-Trading-Marketplace"
 
           />
         </div>
